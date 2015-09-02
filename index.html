@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Anton Volkov</title>
+  <style media="screen">
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Source Code Pro', 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
+      color: #586E75;
+      font-size: 14px;
+      background: #FDF6E3;
+    }
+
+    a {
+      color: #268BD2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-family: 'Source Code Pro', 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
+      font-size: 32px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 500;
+      line-height: 26.3999996185303px;
+    }
+    h3 {
+      font-family: 'Source Code Pro', 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
+      font-size: 14px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 500;
+      line-height: 15.3999996185303px;
+    }
+    p {
+      font-size: 14px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+    blockquote {
+      font-family: 'Source Code Pro', 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
+      font-size: 21px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 30px;
+    }
+    pre {
+      font-family: 'Source Code Pro', 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
+      font-size: 13px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 18.5714302062988px;
+    }
+
+    dd {
+      margin: 0;
+      padding: 2px 0;
+    }
+
+
+    .wrapper {
+      width: 960px;
+      margin: 0 auto;
+      padding: 60px;
+      background: #FDF6E3;
+    }
+
+    header {
+      display: flex;
+    }
+
+    header .name {
+      width: 65%;
+    }
+
+    header .contacts {
+      width: 35%;
+    }
+
+    section {
+      border-top: 1px solid #93A1A1;
+      display: flex;
+      padding: 20px 0;
+    }
+
+    section .title {
+      width: 20%;
+      color: #B4881C;
+    }
+
+    section .content {
+      width: 80%;
+    }
+
+    .job {
+      border-bottom: 1px solid #93A1A1;
+      padding: 10px 0;
+    }
+
+    .job.last {
+      border-bottom: none;
+    }
+
+    .job .intro {
+      display: flex;
+    }
+
+    .job .intro-title {
+      width: 80%;
+      color: #D33682;
+    }
+
+    .job .intro-title span {
+      color: #CB4B16;
+    }
+
+    .job .intro-year {
+      font-weight: bold;
+      width: 20%;
+    }
+
+    .job .description {
+      padding: 8px 0;
+      line-height: 1.4em;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="name">
+        <h1>Anton Volkov</h1>
+      </div>
+      <div class="contacts">
+        <dl>
+          <dd><strong>github:</strong> <a href="https://github.com/choix">https://github.com/choix</a></dd>
+          <dd><strong>phone:</strong> +49 176 ...</dd>
+          <dd><strong>email:</strong> <a href="mailto:choixer@gmail.com">choixer@gmail.com</a></dd>
+        </dl>
+      </div>
+    </header>
+
+    <section name="profile">
+      <div class="title"><h3>Profile</h3></div>
+      <div class="content">
+        I have been passioned about programming from the age of 15.
+        I've started from BASIC and went all the way to Golang passing through Delthi, C/C++, JS and Ruby.
+      </div>
+    </section>
+
+    <section name="skills">
+      <div class="title"><h3>Skills</h3></div>
+      <div class="content">
+        <dl>
+          <dd><strong>Programming Languages:</strong> Ruby, Golang, JavaScript, C/C++, Clojure</dd>
+          <dd><strong>Databases:</strong> PostgreSQL, MySQL, Redis, Elasticsearch, MongoDB, Cassandra</dd>
+          <dd><strong>Frameworks/Libraries:</strong> Rails, Sinatra, React, Ember, Express</dd>
+          <dd><strong>OS:</strong> Mac OSX, Linux</dd>
+          <dd><strong>Misc:</strong> TDD, SQL, HTML</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section name="experience">
+      <div class="title"><h3>Experience</h3></div>
+      <div class="content">
+
+        <div class="job">
+          <div class="intro">
+            <div class="intro-title"><span>Senior Ruby Developer, AdvertileMobile/Fyber</span> Germany, Berlin</div>
+            <div class="intro-year">2013 - PRESENT</div>
+          </div>
+          <div class="description">
+            <ul>
+              <li>Made a system optimization which reduce average response rate from 1.5 seconds to 200ms</li>
+              <li>Developed an API for iOS and Android applications</li>
+              <li>Designed a fraud protection system</li>
+              <li>Made an async fetching of offers from multiple ad networks</li>
+              <li>Make an optimization of offer wall, which double daily revenue</li>
+            </ul>
+            <p>
+              <strong>Stack:</strong> RubyOnRails, MySQL, Redis, Elasticsearch, RSpec, AngularJS.
+            </p>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="intro">
+            <div class="intro-title"><span>Senior Ruby Developer, MGroup</span> Russia, Moscow</div>
+            <div class="intro-year">2012 - 2013</div>
+          </div>
+          <div class="description">
+            <ul>
+              <li>Designed and implemented background queue system</li>
+              <li>Integrated Google Maps API to display doctors and clinics on a map</li>
+              <li>Created a secure chat system between doctor and patient</li>
+            </ul>
+            <p>
+              <strong>Stack:</strong> RubyOnRails/Sinatra, PostgreSQL, Redis, RSpec.
+            </p>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="intro">
+            <div class="intro-title"><span>Ruby Developer / Co-Founder, Curia</span> USA, CA, San Francisco</div>
+            <div class="intro-year">2012 - 2012</div>
+          </div>
+          <div class="description">
+            <ul>
+              <li>Created a platform for publishing digital magazines</li>
+              <li>Made an autogeneration of magazine like cover pages</li>
+              <li>Designed a user acquisition with a use of Facebook OpenGraph</li>
+            </ul>
+            <p>
+              <strong>Stack:</strong> RubyOnRails, MongoDB, Redis, Backbone.
+            </p>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="intro">
+            <div class="intro-title"><span>Analytic, Farmimex</span> Russia, Moscow</div>
+            <div class="intro-year">2011 - 2012</div>
+          </div>
+          <div class="description">
+            <ul>
+              <li>Created automated reporting system of market pricing</li>
+              <li>Made an algorithmic generation of prices for medical drugs</li>
+              <li>I was doing daily competitors analysis</li>
+            </ul>
+            <p>
+              <strong>Stack:</strong> C#, SAP.
+            </p>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="intro">
+            <div class="intro-title"><span>C++ Engineer, JRollon Planes</span> Spain, Madrid (Remote)</div>
+            <div class="intro-year">2009 - 2010</div>
+          </div>
+          <div class="description">
+            <ul>
+              <li>Created a 100% realistic avionics of CRJ aircraft</li>
+              <li>Simulated full functionality of aircraft flight mangement computer</li>
+            </ul>
+            <p>
+              <strong>Stack:</strong> C++, OpenGL, ImageMagic.<br />
+              <strong>Demo:</strong> <a href="http:// www.youtube.com/watch?v=HV37W-gFkPQ">Demo 1</a> <a href="http://www.youtube.com/watch? v=r2bESAopm4M">Demo 2</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="job last">
+          <div class="intro">
+            <div class="intro-title"><span>Moderator, Begun.ru</span> Russia, Moscow</div>
+            <div class="intro-year">2008 - 2009</div>
+          </div>
+          <div class="description">
+            <ul>
+              <li>Moderated advertisment for search advitisment in russian search engine rambler</li>
+              <li>Managed work of 5 remote moderators</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section name="education">
+      <div class="title"><h3>Education</h3></div>
+      <div class="content">
+        INSTITUTE OF INTERNATIONAL ECONOMIC RELATION; RUSSIA, MOSCOW — B.S. ECONOMICS, 2009
+      </div>
+    </section>
+  </div>
+</body>
+</html>
